@@ -1,0 +1,22 @@
+{
+  "name": "swarmtech/doctrine",
+  "description": "Swarmtech Doctrine",
+  "homepage": "https://www.github.com/swarmtech/doctrine",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gary Gitton",
+      "email": "gary@swarmtech.fr",
+      "homepage": "https://www.swarmtech.fr"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "doctrine/doctrine-orm-module": "^2.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Swarmtech\\Doctrine\\": "src/"
+    }
+  }
+}
