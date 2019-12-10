@@ -14,6 +14,13 @@ Added query builder interfaces, query provider factory, single value hydrator.
 composer require swarmtech/doctrine:"^1.0"
 ```
 
+2. Enable module for Zend Framework / Laminas by adding `Swarmtech\\Doctrine` in config/modules.config.php
+```php
+return [
+    "Swarmtech\\Doctrine",
+];
+```
+
 ## Feature
 * QueryProviderFactory to create your QueryProvider classes
 * QueryBuilder Interfaces to make the use of QueryProvider easy
