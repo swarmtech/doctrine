@@ -11,6 +11,8 @@ namespace Swarmtech\Doctrine\ORM;
  */
 abstract class AbstractQueryProvider implements QueryProviderInterface
 {
+    private static $nextAlias = 0;
+
     /**
      * @var QueryBuilderInterface
      */
@@ -22,5 +24,16 @@ abstract class AbstractQueryProvider implements QueryProviderInterface
     public function __construct(QueryBuilderInterface $queryBuilder)
     {
         $this->queryBuilder = $queryBuilder;
+    }
+
+    /**
+     * Create an alias
+     */
+    protected function getNewAlias()
+    {
+        $nextAlias = self::$nextAlias;
+        self::$nextAlias++;
+
+        return 'a' . $nextAlias;
     }
 }
