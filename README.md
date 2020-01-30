@@ -1,4 +1,4 @@
-# Doctrine module for Zend Framework / Laminas
+# Doctrine module for Laminas
 
 Goal of this project is to stop using Entity Repositories and start working with query provider instead. Not sure if
 it's a good idea but it allow to split each query doctrine in it's own QueryProvider provider file. 
@@ -14,7 +14,7 @@ Added query builder interfaces, query provider factory, single value hydrator.
 composer require swarmtech/doctrine:"^1.0"
 ```
 
-2. Enable module for Zend Framework / Laminas by adding `Swarmtech\\Doctrine` in config/modules.config.php
+2. Enable module for Laminas by adding `Swarmtech\\Doctrine` in config/modules.config.php
 ```php
 return [
     "Swarmtech\\Doctrine",
